@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  background-color: dimgray;
+  color: whitesmoke;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1em;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 1em;
+}
+
+#strength-weakness {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid {
+  width: 50%;
+  /* border: 1px solid green; */
+  align-items: center;
+  text-align: center;
+  padding-top: 1em;
+}
+
+ul {
+  /* border: 1px solid yellow; */
+  list-style-type: none;
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: space-around; */
+  flex-flow: column wrap;
+  /* width: 80%; */
+  margin: 0 10%;
+}
+
+#strength-weakness li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: .1em;
+  text-align: left;
+}
+
+.weaknesses ul li {
+  background-color: firebrick;
+  border: 1px solid pink;
+}
+
+.strength ul li {
+  background-color: teal;
+  border: 1px solid lightgreen;
+}
+
+.strength ul li:last-child {
+  position: relative;
+  top: 60px; left: 40px;
+}
+
+#communication-tips {
+  justify-content: center;
+}
+#communication-tips ul {
+  background-color: darkslateblue;
+}
+
+#communication-tips ul li::first-letter {
+  font-weight: bold;
+  font-family: Consolas, monospace;
+  font-size: 2em;
+  color: lightblue;
+  display: inline-block;
+  padding: 0 .1em; 
+}
+
+
+#famous-people {
+  justify-content: center;
+}
+
+#famous-people ul li:first-child {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+#famous-people ul li {
+  font-size: 1.3em;
+  padding: .1em;
+}
